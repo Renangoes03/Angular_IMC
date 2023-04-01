@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Calculo</h1>
+    <div class="header">
+        <label for="floatingInput">Nome</label><br><br>
+        <input type="text" class="form-control" id="Nome" placeholder="Nome">
+        <br>
+        <label for="floatingInput">Peso</label><br><br>
+        <input type="text" class="form-control" id="Peso" [(ngModel)]="peso" placeholder="Peso">
+        <br>
+        <label for="floatingInput">Altura</label><br><br>
+        <input type="text" class="form-control" id="Altura" [(ngModel)]="altura" placeholder="Altura">
+        <br>
+	<p>Sexo:</p>
+	<input type="radio" id="sexo-m" name="sexo" value="Masculino">
+	<label for="sexo-m">Masculino</label><br>
+	<input type="radio" id="sexo-f" name="sexo" value="Feminino">
+	<label for="sexo-f">Feminio</label>
+	<br>
+	<br>
+        <div class="col">
+            <input type="text" class="form-control" id="resultado" [(ngModel)]="resultado"  readonly>
+            <br><br>
+            <button type="button" class="btn btn-success" id="btn-calcular" (click)="calcular()">Calcular</button>
+        </div>
+    </div>
+
+</div>
+
+
+<app-calculadora></app-calculadora>
